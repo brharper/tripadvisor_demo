@@ -5,9 +5,9 @@ import java.awt.*;
 
 public class TripAdvisor {
     public static final String rapidApiHostKey = "x-rapidapi-host";
-    public static final String rapidApiHostValue = "https://tripadvisor1.p.rapidapi.com";
+    public static final String rapidApiHostValue = "http://tripadvisor1.p.rapidapi.com";
     public static final String rapidApiKeyKey = "x-rapidapi-key";
-    public static final String rapidApiKeyValue = "YOUR_KEY_HERE";
+    public static final String rapidApiKeyValue = "94936e3315mshcb5523d01421d70p18694cjsn95ba4cb7a810";
     public static final String airportSearch = "/airports/search";
     public static final String defaultLocale = "en_US";
 

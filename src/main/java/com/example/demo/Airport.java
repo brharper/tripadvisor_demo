@@ -43,16 +43,17 @@ public class Airport {
     public String toString() {
         return String.format(
                 "Airport:\n\t" +
-                        "%-17s = %s\n\t" +
-                        "%-17d = %s\n\t" +
-                        "%-17s = %s\n\t" +
-                        "%-17s = %s\n\t" +
-                        "%-17s = %s\n\t" +
-                        "%-17s = %s\n\t" +
-                        "%-17s = %s\n\t" +
-                        "%-17s = %s\n\t" +
-                        "%-17f = %s\n\t" +
-                        "%-17f = %s\n\t",
+                        "%s = %s\n\t" +
+                        "%s = %s\n\t" +
+                        "%s = %s\n\t" +
+                        "%s = %s\n\t" +
+                        "%s = %s\n\t" +
+                        "%s = %s\n\t" +
+                        "%s = %s\n\t" +
+                        "%s = %d\n\t" +
+                        "%s = %s\n\t" +
+                        "%s = %f\n\t" +
+                        "%s = %f\n\t",
                 "code", code,
                 "city_name", cityName,
                 "country_code ", countryCode,

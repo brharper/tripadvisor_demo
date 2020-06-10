@@ -19,23 +19,23 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
-	@Bean
-	public RestTemplate restTemplate(RestTemplateBuilder builder){
-		return builder.build();
-	}
-
-	@Bean
-	public CommandLineRunner run(RestTemplate restTemplate) throws Exception{
-		return args -> {
-			String url = "https://tripadvisor1.p.rapidapi.com/airports/search?locale=en_US&query=jfk";
-			ResponseEntity<String> response = restTemplate.exchange(
-					url,
-					HttpMethod.GET,
-					TripAdvisor.getHttpHeaderEntity(),
-					String.class);
-
-			logger.info(response.getBody());
-		};
-	}
+//	@Bean
+//	public RestTemplate restTemplate(RestTemplateBuilder builder){
+//		return builder.build();
+//	}
+//
+//	@Bean
+//	public CommandLineRunner run(RestTemplate restTemplate) throws Exception{
+//		return args -> {
+//			String url = "https://tripadvisor1.p.rapidapi.com/airports/search?locale=en_US&query=jfk";
+//			ResponseEntity<String> response = restTemplate.exchange(
+//					url,
+//					HttpMethod.GET,
+//					TripAdvisor.getHttpHeaderEntity(),
+//					String.class);
+//
+//			logger.info(response.getBody());
+//		};
+//	}
 
 }
